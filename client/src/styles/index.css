@@ -1,0 +1,44 @@
+/*
+  THE ONLY GLOBAL CSS FILE. Styling bug that affects every page? It's here.
+  Styling bug on one page? It's in that page's .jsx (Tailwind classes).
+
+  Design tokens: define a color/font ONCE in @theme and Tailwind makes classes for it.
+    --color-primary  ->  bg-primary, text-primary, border-primary
+  Never paste a hex code into a component. Add a token here instead.
+*/
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1f6f5c;
+  --color-primary-dark: #15503f;
+  --color-accent: #e8a33d;
+  --color-surface: #ffffff;
+  --color-background: #f5f4f0;
+  --color-text: #1c1c1a;
+  --color-muted: #6b6a64;
+  --color-border: #e2e0d8;
+  --color-danger: #c0392b;
+  --color-success: #2e8b57;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --radius-card: 12px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text font-sans antialiased;
+  }
+}
+
+/* Shared class names every page can use. Add new ones here, not in pages. */
+@layer components {
+  .page {
+    @apply mx-auto max-w-6xl px-4 py-8;
+  }
+  .page-title {
+    @apply text-2xl font-semibold;
+  }
+  .card {
+    @apply bg-surface border border-border rounded-[var(--radius-card)] p-4;
+  }
+}

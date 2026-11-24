@@ -1,0 +1,11 @@
+node_modules/
+server/uploads/
+dist/
+.env
+*.log
+.DS_Store
+# 3D scan exports are big: keep them out of git (upload to storage instead)
+*.glb
+*.obj
+*.usdz
+*.ply

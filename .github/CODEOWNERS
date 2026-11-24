@@ -1,0 +1,72 @@
+# Who gets asked to review when a file changes. Later lines win over earlier ones.
+# M1 Ashutosh Ghimire · M2 Simon Khatri · M3 Nirmal Yadav · M4 Ashutosh Karki · M5 Purshottam Yadav
+# The M1..M5 placeholders are replaced with real usernames by scripts/setup-github.sh.
+
+*                                   @ashut000sh
+
+# ---- repo settings (GitHub care: Ashutosh Karki) ----
+/.github/                           @ashut000sh
+/scripts/                           @ashut000sh
+/package.json                       @ashut000sh
+/eslint.config.js                   @ashut000sh
+
+# ---- shared contract (affects everyone: team lead) ----
+/shared/                            @Ashut0sh-Ghimire
+
+# ---- documentation (Simon Khatri technical, Nirmal Yadav report side) ----
+/README.md                          @khatri69simon-ui
+/docs/                              @khatri69simon-ui @nirmalyadav-eng
+/docs/SETUP.md                      @khatri69simon-ui
+/docs/DATABASE.md                   @khatri69simon-ui @yadavpurshotam071-droid
+/docs/TESTING.md                    @khatri69simon-ui
+/docs/meetings/                     @nirmalyadav-eng
+/docs/PROGRESS.md                   @nirmalyadav-eng
+/docs/USER-MANUAL.md                @nirmalyadav-eng
+/docs/API.md                        @ashut000sh @yadavpurshotam071-droid
+
+# ---- frontend: common (Simon Khatri) ----
+/client/                            @khatri69simon-ui
+/client/src/components/             @khatri69simon-ui
+/client/src/components/ListingCard.jsx  @nirmalyadav-eng
+/client/src/styles/                 @khatri69simon-ui
+/client/src/layouts/                @khatri69simon-ui
+/client/src/hooks/                  @khatri69simon-ui
+/client/src/App.jsx                 @khatri69simon-ui @nirmalyadav-eng
+/client/src/constants/              @khatri69simon-ui @nirmalyadav-eng
+
+# ---- frontend: screens ----
+/client/src/pages/Splash/           @khatri69simon-ui
+/client/src/pages/Onboarding/       @khatri69simon-ui
+/client/src/pages/Signup/           @khatri69simon-ui
+/client/src/pages/Login/            @khatri69simon-ui
+/client/src/pages/Otp/              @khatri69simon-ui
+/client/src/pages/Chat/             @khatri69simon-ui
+/client/src/pages/NotFound/         @khatri69simon-ui
+/client/src/pages/Home/             @nirmalyadav-eng
+/client/src/pages/Search/           @nirmalyadav-eng
+/client/src/pages/Listing/          @nirmalyadav-eng
+/client/src/pages/Compare/          @nirmalyadav-eng
+/client/src/pages/Booking/          @nirmalyadav-eng
+/client/src/pages/ScanRequest/      @nirmalyadav-eng
+/client/src/pages/Tour/             @Ashut0sh-Ghimire
+/client/src/pages/AdminDashboard/   @Ashut0sh-Ghimire
+
+# ---- frontend: services (frontend owner + matching backend owner) ----
+/client/src/services/api.js               @khatri69simon-ui
+/client/src/services/auth.service.js      @khatri69simon-ui @ashut000sh
+/client/src/services/chat.service.js      @khatri69simon-ui @yadavpurshotam071-droid
+/client/src/services/listings.service.js  @nirmalyadav-eng @ashut000sh
+/client/src/services/bookings.service.js  @nirmalyadav-eng @yadavpurshotam071-droid
+/client/src/services/scans.service.js     @nirmalyadav-eng @yadavpurshotam071-droid
+/client/src/services/admin.service.js     @Ashut0sh-Ghimire @yadavpurshotam071-droid
+
+# ---- backend ----
+/server/                            @ashut000sh @yadavpurshotam071-droid
+/server/db/                         @yadavpurshotam071-droid
+/server/src/middleware/             @ashut000sh
+/server/src/modules/auth/           @ashut000sh
+/server/src/modules/listings/       @ashut000sh
+/server/src/modules/scans/          @yadavpurshotam071-droid
+/server/src/modules/bookings/       @yadavpurshotam071-droid
+/server/src/modules/chat/           @yadavpurshotam071-droid
+/server/src/modules/admin/          @yadavpurshotam071-droid
